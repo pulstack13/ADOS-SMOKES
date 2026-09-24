@@ -1,4 +1,4 @@
-# ADOS
+# ADOS-SMOKES
 
 ADOS is a browser-hosted, smoke-free virtual lounge with camera-based visual effects. Everything is fictional and on-screen: no real smoke, tobacco, inhalation, tracking, or remote service is involved.
 
