@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#100e18">
+  <title>ADOS — Virtual Lounge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+  <header class="topbar">
+    <a href="#" class="brand"><span class="brand-mark">◉</span> ADOS</a>
+    <nav aria-label="Main navigation"><a class="active" href="#studio">Studio</a><a href="#collection">Collection</a><a href="#about">About</a></nav>
+    <button class="sound-button" id="soundToggle" aria-label="Toggle sound effects"><span class="sound-icon">♪</span><span id="soundText">Sound off</span></button>
+  </header>
+
+  <main>
+    <section class="intro" id="studio">
+      <div class="eyebrow"><span></span> A LITTLE ESCAPE, ENTIRELY DIGITAL</div>
+      <h1>Enter your own<br><em>cloud nine.</em></h1>
+      <p class="intro-copy">A playful, smoke-free hookah-inspired experience. Pick a mood, make it yours, and watch your virtual lounge come alive.</p>
+    </section>
+
+    <section class="studio" aria-label="Virtual hookah studio">
+      <div class="scene" id="scene" data-theme="amethyst">
+        <div class="scene-label"><span class="live-dot"></span> YOUR VIRTUAL LOUNGE</div>
+        <div class="scene-meta"><span id="sceneName">THE MOON GARDEN</span><span>•</span><span id="sceneMood">DREAMY / 01</span></div>
+        <div class="stars" aria-hidden="true"></div>
+        <div class="moon"></div>
+        <div class="plant plant-left"><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="plant plant-right"><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="hookah-wrap" aria-label="An illustrated virtual hookah">
+          <svg class="hookah" viewBox="0 0 270 390" role="img" aria-label="A glowing, stylized hookah">
+            <defs>
+              <linearGradient id="stem" x1="0" x2="1"><stop stop-color="#62616c"/><stop offset=".25" stop-color="#e4d8bd"/><stop offset=".56" stop-color="#80776e"/><stop offset=".82" stop-color="#f4e1b6"/><stop offset="1" stop-color="#625d68"/></linearGradient>
+              <linearGradient id="glass" x1="0" x2="1" y1="0" y2="1"><stop stop-color="var(--glass-hi)" stop-opacity=".78"/><stop offset=".45" stop-color="var(--glass)" stop-opacity=".56"/><stop offset="1" stop-color="var(--glass-low)" stop-opacity=".9"/></linearGradient>
+              <linearGradient id="bowl" x1="0" x2="1"><stop stop-color="#baa178"/><stop offset=".48" stop-color="#f0ddb6"/><stop offset="1" stop-color="#947653"/></linearGradient>
+              <filter id="glow"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+            </defs>
+            <ellipse cx="137" cy="360" rx="100" ry="14" fill="#09080e" opacity=".65"/>
+            <path d="M131 27 C93 16 72 33 73 65 C74 91 92 100 93 124" fill="none" stroke="var(--hose)" stroke-width="8" stroke-linecap="round"/>
+            <path d="M74 54 C38 52 27 69 31 100 C35 130 65 151 74 187 C80 212 68 239 43 242" fill="none" stroke="var(--hose)" stroke-width="8" stroke-linecap="round"/>
+            <path d="M41 236 L36 270 Q55 280 70 268 L65 237" fill="url(#stem)" stroke="#514b50" stroke-width="2"/>
+            <path d="M87 196 Q137 179 187 196 L207 324 Q209 351 186 355 L88 355 Q64 351 67 324 Z" fill="url(#glass)" stroke="var(--glass-hi)" stroke-width="2"/>
+            <ellipse cx="137" cy="197" rx="50" ry="12" fill="var(--glass-hi)" opacity=".72"/>
+            <path d="M77 300 Q136 310 197 299 L203 331 Q203 350 184 352 L91 352 Q69 349 69 330Z" fill="var(--glass-low)" opacity=".75"/>
+            <path d="M83 302 Q137 311 200 300" fill="none" stroke="var(--accent)" stroke-width="3" opacity=".85"/>
+            <path d="M103 199 L112 120 L162 120 L172 199" fill="url(#stem)" stroke="#544e51" stroke-width="2"/>
+            <rect x="107" y="110" width="61" height="15" rx="4" fill="url(#stem)"/>
+            <path d="M116 110 L122 43 L154 43 L160 110" fill="url(#stem)" stroke="#5a514a" stroke-width="2"/>
+            <path d="M115 43 L113 34 Q137 25 163 34 L160 43Z" fill="url(#bowl)" stroke="#756249" stroke-width="2"/>
+            <path d="M116 30 Q137 19 161 30 L157 36 Q137 28 117 36Z" fill="#3a293c" stroke="var(--accent)" stroke-width="2"/>
+            <path d="M111 31 Q136 24 166 31 L164 36 Q137 30 113 37Z" fill="url(#bowl)"/>
+            <ellipse cx="138" cy="32" rx="19" ry="6" fill="var(--accent)" opacity=".85" filter="url(#glow)"/>
+            <path d="M117 212 Q136 223 158 212 M113 226 Q136 237 163 226 M109 240 Q136 251 167 240" fill="none" stroke="var(--accent)" stroke-width="1.5" opacity=".45"/>
+            <circle cx="109" cy="276" r="3" fill="#fff" opacity=".55"/><circle cx="127" cy="284" r="2" fill="#fff" opacity=".7"/><circle cx="151" cy="269" r="2.5" fill="#fff" opacity=".6"/><circle cx="174" cy="289" r="3" fill="#fff" opacity=".5"/>
+          </svg>
+        </div>
+        <div class="vapor" id="vapor" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="scene-actions"><button class="camera-button" id="startExperience"><span>◉</span> Start virtual mode</button><button class="puff-button" id="puffButton"><span>✦</span> Make a cloud</button></div>
+        <div class="scene-caption">A moment to yourself <span>✳</span></div>
+      </div>
+
+      <aside class="controls">
+        <div class="control-heading"><div><div class="eyebrow small">SET THE SCENE</div><h2>Choose your mood</h2></div><span class="step">01 <i>/</i> 03</span></div>
+        <p class="control-copy">Every detail shifts with the feeling you're after.</p>
+        <div class="mood-list" role="group" aria-label="Choose a virtual lounge mood">
+          <button class="mood active" data-theme="amethyst" data-name="THE MOON GARDEN" data-mood="DREAMY / 01"><span class="swatch amethyst"></span><span class="mood-text"><b>Moon Garden</b><small>Amethyst · Dreamy</small></span><span class="arrow">↗</span></button>
+          <button class="mood" data-theme="citrus" data-name="THE CITRUS CLUB" data-mood="BRIGHT / 02"><span class="swatch citrus"></span><span class="mood-text"><b>Citrus Club</b><small>Yuzu · Sunlit</small></span><span class="arrow">↗</span></button>
+          <button class="mood" data-theme="lagoon" data-name="THE BLUE HOUR" data-mood="SERENE / 03"><span class="swatch lagoon"></span><span class="mood-text"><b>Blue Hour</b><small>Mint · Serene</small></span><span class="arrow">↗</span></button>
+          <button class="mood" data-theme="rose" data-name="THE AFTERGLOW" data-mood="WARM / 04"><span class="swatch rose"></span><span class="mood-text"><b>Afterglow</b><small>Rose · Golden</small></span><span class="arrow">↗</span></button>
+        </div>
+        <div class="divider"></div>
+        <div class="toggle-row"><div><b>Floating petals</b><small>Add a little movement</small></div><button class="toggle" id="petalToggle" role="switch" aria-checked="true"><span></span></button></div>
+        <div class="note"><span>✧</span><p>This is a fictional visual experience. No real smoke, tobacco, or inhalation involved.</p></div>
+      </aside>
+    </section>
+
+    <section class="collection" id="collection"><div class="section-head"><div><div class="eyebrow small">MADE FOR YOUR MOMENT</div><h2>Little worlds, big exhale.</h2></div><p>Four imaginary lounges. Endless ways to unwind.</p></div>
+      <div class="cards">
+        <button class="world-card" data-select="amethyst"><span class="card-art art-a"><i>✷</i></span><span><b>Moon Garden</b><small>soft · otherworldly</small></span><span class="card-arrow">↗</span></button>
+        <button class="world-card" data-select="citrus"><span class="card-art art-b"><i>☼</i></span><span><b>Citrus Club</b><small>bright · unhurried</small></span><span class="card-arrow">↗</span></button>
+        <button class="world-card" data-select="lagoon"><span class="card-art art-c"><i>〰</i></span><span><b>Blue Hour</b><small>cool · weightless</small></span><span class="card-arrow">↗</span></button>
+        <button class="world-card" data-select="rose"><span class="card-art art-d"><i>✿</i></span><span><b>Afterglow</b><small>warm · golden</small></span><span class="card-arrow">↗</span></button>
+      </div>
+    </section>
+    <section class="about" id="about"><span>A</span><p>Take a breath. Or don't. It's just pixels.</p><small>ADOS · A DIGITAL DAYDREAM</small></section>
+  </main>
+  <div class="camera-modal" id="cameraModal" role="dialog" aria-modal="true" aria-labelledby="cameraTitle" hidden>
+    <div class="camera-panel">
+      <button class="close-camera" id="closeCamera" aria-label="Close virtual mode">×</button>
+      <div class="camera-heading"><div class="eyebrow small">LIVE, ON YOUR DEVICE</div><h2 id="cameraTitle">Virtual lounge mode</h2><p id="cameraStatus">Allow camera access to begin your live visual experience.</p></div>
+      <div class="camera-frame"><video id="cameraFeed" autoplay playsinline muted></video><svg class="virtual-hose" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path id="hosePath" d="M 91 83 C 78 83 76 70 58 62" /></svg><div class="virtual-bottle" aria-hidden="true"><span class="bottle-neck"></span><span class="bottle-body"><i></i><i></i><i></i></span><span class="bottle-base"></span></div><div class="tracked-pipe" id="trackedPipe" aria-hidden="true"><span class="pipe-bowl"></span><span class="pipe-stem"></span><span class="pipe-mouthpiece"></span></div><div class="camera-empty" id="cameraEmpty"><span>◌</span><p>Your camera preview appears here.</p></div><div class="camera-vapor" id="cameraVapor" aria-hidden="true"><i></i><i></i><i></i><i></i></div><div class="camera-badge"><span></span> LIVE PREVIEW</div></div>
+      <div class="camera-controls"><button class="experience-puff" id="experiencePuff" disabled>✦ Create a virtual cloud</button><button class="fullscreen-camera" id="fullscreenCamera" disabled>⛶ Full screen</button><button class="stop-camera" id="stopCamera" disabled>Stop camera</button></div>
+      <p class="camera-note">Your video stays in this browser tab. Nothing is recorded or uploaded.</p>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/holistic/holistic.js" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+</html>
